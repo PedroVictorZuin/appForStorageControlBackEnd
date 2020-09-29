@@ -13,6 +13,12 @@ const simpleRoutes = require("./routes/simpleRoutes")
 // End Declaratiom of the Routes of the system ! 
 
 
+// Database Connection 
+
+    const connectionOfDatabase = require('./enviroments/enviromentMysql')
+
+// End of Database Connection 
+
 
 
 
