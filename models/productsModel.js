@@ -26,7 +26,15 @@ let ProductModel =
     {
         return await Models.ProductModel.findAll();
     },
-    FindOneRegister : async function(Product){},
+    FindOneRegister : async function(idProduct)
+    {
+        return await Models.ProductModel.findAll({
+            where : 
+                    {
+                        id : idProduct
+                    }
+        })
+    },
 }
 
 module.exports = ProductModel;

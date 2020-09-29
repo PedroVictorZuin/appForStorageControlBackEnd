@@ -34,7 +34,12 @@ let ProductController =
     FindAllProducts : async function()
         {
            return await ProductModel.FindAllRegisters()
-        }
+        },
+    FindOneProduct : async function(idProduct)
+    {
+        return await ProductModel.FindOneRegister(idProduct)
+    }
+
 }
 
 module.exports = ProductController
